@@ -1,0 +1,91 @@
+<!--Najah Hawa -->
+<!--Webbuteckling III DT173G -->
+<!--Mitt universitet-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sass.css">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="topnav">
+           <!--resturnag namn och undersidor med hastag till samma sida-->
+      
+          <h1> Chikno</h1> 
+  
+          <div id="myLinks">
+          <a href="#Meny">Meny</a>
+          <a href="#h2">Boka bord</a>
+          <a href= "#om_oss" > Om oss </a> 
+          </div>
+    </div>   
+  
+  </header>
+  
+
+<div class="container"> 
+
+    <h2 class="h2" id="Meny"> Vår meny: </h2>
+  <div id="meallist" class="meallist"> </div> <!--anropa mealitem med fetch api med webbtjänst som vi tidigare gjorde-->
+
+
+
+<h2 class="h2" id="h2"> Skapa en order: </h2> 
+<!-- form för att man ska fylla i viktigt information -->
+<form id="mealform" > 
+<div class="mealform"> 
+<div class="form"> 
+  <p id="error"> </p>
+  <p id="meddelande"> </p>
+    <label for="namn">Namn:</label><br>
+    <input type="text" id="namn" name="namn" class="input" required ><br>
+    <label for="persons">Antalpersoner:</label><br>
+    <input type="number" id="persons" name="persons" class="input"  min="1" required><br>
+    <label for="email">e-postadress:</label><br>
+    <input type="email" name="email" id="email">
+    <label for="datum"> <br> Ankomst datum:</label><br>
+      <input type="date" name="ankomst" id="ankomst" required>
+      <br>
+      <label for="dagsform">Ange Klocka (mellan 10 till 24):</label><br>
+      <input type="number" name="klocka" id="klocka" min="10" max="24" required>
+      
+  </div> 
+</div>
+<input type="submit" value="Boka bord" id="add" class="loginbutton">
+
+</form>
+
+
+<!--om restuurnag del-->
+
+<h2 class="h2" id="Meny"> Om oss: </h2>
+<div class="about" id="om_oss"> 
+  <p>Chikno är ett företag som startades år 2024. vi finns på Stockholm/märsta. vår chef har erfarenhet i att laga mat 20 år. alla våra ingredient är färska så därför kan du vara säker på att maten är riktigt god. kom gärna och prova själv våra rätter.
+  </p>
+</div>
+
+
+
+
+
+    <script src="/js/main.js"></script>
+
+    <footer>
+      <p>0700150775 </p>
+      <p>chickno@gmail.com </p>
+      <p>Öppet tider : MÅN - FRE, KL:10 -24 </p>
+    </footer>
+</div>
+
+
+</body>
+</html>
+

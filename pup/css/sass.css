@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(58, 169, 169);
+  overflow: visible;
+  height: 120px;
+}
+
+header h1 {
+  text-shadow: 3px 2px;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.container {
+  padding: 50px;
+  background-color: rgb(165, 201, 201);
+}
+
+#myLinks {
+  text-align: center;
+}
+#myLinks a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  padding: 16px;
+}
+#myLinks a:hover {
+  background-color: rgb(165, 201, 201);
+  font-size: 140%;
+  font-family: monospace;
+}
+
+.h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  border: 3px solid #070606;
+  background-color: rgb(223, 235, 235);
+  text-align: center;
+  margin-bottom: 70px;
+}
+form .text {
+  padding-left: 20px;
+  font-size: 20px;
+}
+form .form {
+  padding: 20px;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=email] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbutton {
+  background-color: #514f4f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.meallist {
+  padding-bottom: 60px;
+}
+
+.about, .mealitem {
+  margin-bottom: 10px;
+  background-color: rgb(223, 235, 235);
+  border-radius: 10%;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 3px 2px;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-shadow: 1px 1px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.mealitem:hover {
+  font-size: 130%;
+  border-radius: 20%;
+  background-color: rgb(58, 169, 169);
+  color: white;
+}
+
+.error {
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: rgb(241, 39, 39);
+}
+
+.meddelande {
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: rgb(37, 219, 85);
+}
+
+/*footer*/
+footer {
+  background-color: rgb(165, 201, 201);
+  padding-top: 70px;
+}
+footer p {
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .h2 {
+    font-size: 25px;
+  }
+  .mealitem {
+    font-size: 18px;
+  }
+  .about {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .h2 {
+    font-size: 22px;
+  }
+  .mealitem {
+    font-size: 15px;
+  }
+  .about {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  footer p {
+    font-size: 15px;
+    padding-bottom: 6px;
+  }
+  .container {
+    padding: 10px;
+  }
+}

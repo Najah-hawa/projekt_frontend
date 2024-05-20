@@ -1,0 +1,139 @@
+@import  "basic";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+header{
+  background-color: $navcolor;  //anropa variable med färg för navcolor
+  overflow:visible;
+  height: 120px;
+}
+header h1{   //anropa mixon som djordes i basic sida
+  @include header;
+}
+
+.container {
+  padding: 50px;
+  background-color: $light-navcolor;
+}
+
+//använd nesting
+#myLinks{
+  text-align: center;
+a{
+  text-decoration: none;
+  color:black;
+  margin:20px; 
+  padding: 16px;
+}
+a:hover{
+  background-color: $light-navcolor;
+  font-size: 140%;
+  font-family: monospace;
+}
+
+}
+//anropa mixin
+.h2{
+  @include h2;
+}
+
+
+//använd nesting i scss
+form {
+  border: 3px solid #070606;
+  background-color: $divcolor;
+  text-align: center;
+  margin-bottom: 70px;
+.text{
+  padding-left: 20px;
+  font-size: 20px;
+}
+.form{
+  padding:20px
+}
+}
+
+//style för input 
+input[type=text], input[type=date], input[type=number], input[type=email]  {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbutton{
+  @include button;
+
+}
+
+.meallist{
+  padding-bottom: 60px;
+}
+
+//använd extend i scsss 
+%mealitem{
+  margin-bottom: 10px;
+  background-color: $divcolor;
+  border-radius: 10%;
+  text-align: center;
+  padding: 20px;
+  @include header;
+  font-size: 20px;
+  text-shadow: 1px 1px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.mealitem{
+  @extend %mealitem;   //anropa extend
+} 
+.mealitem:hover{    //lägg till hover för mealitem
+    font-size: 130%;
+    border-radius: 20%;
+    background-color: $navcolor;
+    color:white;
+}
+
+.about{
+  @extend %mealitem;   //anropa extend igen i annan class
+}
+
+.error{     //style för felmeddelande för att beställa order
+  @include text;
+  color:rgb(241, 39, 39);
+}
+.meddelande{    //style för meddelande om beställning gjordes
+  @include text;
+  color: rgb(37, 219, 85);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+  background-color: rgb(165, 201, 201);
+  padding-top: 70px;
+  p{
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 20px;
+}
+}
+
+
+@import "media";
