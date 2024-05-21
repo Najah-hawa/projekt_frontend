@@ -1,8 +1,8 @@
 "use strict";
 
 window.onload = init;
-let url = "http://studenter.miun.se/~naha2204/dt173g/projekt_dt173g/php_api/meals/read.php";
-let urlorder = "http://studenter.miun.se/~naha2204/dt173g/projekt_dt173g/php_api/meals/readorder.php";
+let url = "https://studenter.miun.se/~naha2204/dt173g/projekt_dt173g/php_api/meals/read.php";
+let urlorder = "https://studenter.miun.se/~naha2204/dt173g/projekt_dt173g/php_api/meals/readorder.php";
 
 const namninput =document.getElementById("namn");
 const personsinput =document.getElementById("persons");
